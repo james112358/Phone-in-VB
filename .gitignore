@@ -1,3 +1,6 @@
+'This is a stupid Comment
+
+
 Public Class Form1
     Dim hshContacts As New Hashtable()
 
