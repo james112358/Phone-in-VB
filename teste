@@ -1,0 +1,20 @@
+Public Class frmLogin
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Dim pin As Integer
+
+        pin = txtPin.Text
+
+        If pin.Equals(1234) Then
+            Me.Hide()
+            Form1.Show()
+        Else
+            lblMsg.Text = "PIN is Wrong. Try Again!"
+            txtPin.Text = ""
+        End If
+    End Sub
+
+    Private Sub frmLogin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
+End Class
